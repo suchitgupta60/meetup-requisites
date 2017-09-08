@@ -8,7 +8,7 @@ $(document).ready(function() {
       window.web3 = new Web3(web3.currentProvider); 
       if (web3.currentProvider.isMetaMask === true) {
           if (typeof web3.eth.defaultAccount === 'undefined') {
-              document.body.innerHTML = '<body><h1>Oops! Your browser does not support Ethereum Ðapps.</h1></body>';   
+              document.body.innerHTML = '<body><h1>Oops! Login to your metamask. Your browser does not support Ethereum Ðapps.</h1></body>';   
           }
           else {
               startApp();
@@ -46,7 +46,7 @@ function MainFunction(){
         var Email = $('#email').val();
         var Nationality = $('#nationality').val();
         var Gender = $('#gender').val();
-  
+        
           debugger;
       });
   
