@@ -30,22 +30,22 @@ function startApp() {
 
 function MainFunction(){ 
   
-      var Email = $('#email').val();
+      var Email = $('#listerEmail').val();
       var EmailHash = CryptoJS.MD5(Email).toString();  
       var ImageRequestURL = "https://www.gravatar.com/avatar/" + EmailHash;
       
       //$("#profile-image1").attr("src", ImageRequestURL); 
     
       $("#submit").on( "click", function() {
-        var FirstName = $('#firstName').val();
-        var MiddleName = $('#middleName').val();
-        var LastName = $('#lastName').val();
-        var JoinDate = $('#joinDate').val();
-        var BirthDate = $('#birthDate').val();
-        var City = $('#city').val();
-        var Email = $('#email').val();
-        var Nationality = $('#nationality').val();
-        var Gender = $('#gender').val();
+        var HouseAddress = $('#houseAddress').val();
+        var HouseTitle = $('#houseTitle').val();
+        var HouseDeed = $('#houseDeed').val();
+        var TitleAffidavit = $('#titleAffidavit').val();
+        var BillofSale = $('#billofSale').val();
+        var TransferTaxDeclarations = $('#transferTaxDeclarations').val();
+        var ListerName = $('#listerName').val();
+        var ListerEmail = $('#listerEmail').val();
+        var ListerPhone = $('#listerPhone').val();
         
           debugger;
       });
@@ -54,4 +54,8 @@ function MainFunction(){
         $('#profile-image-upload').click();
       });    
 }
+
+function AddFilesToIPFS(){
   
+
+}
